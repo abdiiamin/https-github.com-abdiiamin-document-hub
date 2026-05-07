@@ -1,0 +1,26 @@
+// composer.json
+{
+    "name": "documenthub/app",
+    "description": "Professional Document Download Platform",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "phpmailer/phpmailer": "^6.5",
+        "stripe/stripe-php": "^10.0",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "App\\Controllers\\": "src/Controllers/",
+            "App\\Models\\": "src/Models/",
+            "App\\Services\\": "src/Services/",
+            "App\\Middleware\\": "src/Middleware/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php -r \"copy('.env.example', '.env');\""
+        ]
+    }
+}
