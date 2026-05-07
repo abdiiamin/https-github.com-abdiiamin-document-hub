@@ -1,1 +1,1 @@
-https://github.com/abdiiamin/document-hub/setup.php
+https://github.com/abdiiamin/document-hub/index.php
